@@ -165,8 +165,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_MyLayout__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_next_link__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_next_link___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_next_link__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_isomorphic_unfetch__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_isomorphic_unfetch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_isomorphic_unfetch__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_next_head__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_next_head___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_next_head__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_isomorphic_unfetch__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_isomorphic_unfetch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_isomorphic_unfetch__);
 
 
 
@@ -176,8 +178,17 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 
 
+
 var Index = function Index(props) {
-  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_MyLayout__["a" /* default */], null, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("h1", null, "Batman TV shows"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("ul", null, props.shows.map(function (_ref) {
+  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("div", null, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4_next_head___default.a, null, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("title", null, "React Server Side Rendering"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("meta", {
+    charSet: "utf-8"
+  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("meta", {
+    name: "viewport",
+    content: "initial-scale=1.0, width=device-width"
+  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("meta", {
+    name: "google-site-verification",
+    content: "BTBGtjSmjRlIGKxxkdO2oip-gRk-vGZNXoTOWNV38KQ"
+  })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_MyLayout__["a" /* default */], null, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("h1", null, "Batman TV shows"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("ul", null, props.shows.map(function (_ref) {
     var show = _ref.show;
     return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("li", {
       key: show.id
@@ -185,7 +196,7 @@ var Index = function Index(props) {
       as: "/p/".concat(show.id),
       href: "/post?id=".concat(show.id)
     }, show.name));
-  })));
+  }))));
 };
 
 Index.getInitialProps =
@@ -199,7 +210,7 @@ __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator___default.a.mark(function
       switch (_context.prev = _context.next) {
         case 0:
           _context.next = 2;
-          return __WEBPACK_IMPORTED_MODULE_4_isomorphic_unfetch___default()('https://api.tvmaze.com/search/shows?q=batman');
+          return __WEBPACK_IMPORTED_MODULE_5_isomorphic_unfetch___default()('https://api.tvmaze.com/search/shows?q=batman');
 
         case 2:
           res = _context.sent;
@@ -221,6 +232,12 @@ __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator___default.a.mark(function
   }, _callee, this);
 }));
 /* harmony default export */ __webpack_exports__["default"] = (Index);
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports) {
+
+module.exports = require("next/head");
 
 /***/ })
 /******/ ]);

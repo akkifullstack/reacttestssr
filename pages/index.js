@@ -13,8 +13,6 @@ const Index = (props) => (
 		<meta name="google-site-verification" content="BTBGtjSmjRlIGKxxkdO2oip-gRk-vGZNXoTOWNV38KQ" />
 	</Head>
 
-	<h1>This page has a title :thinking_face:</h1>
-
 	<Layout>
 		<h1>Batman TV shows</h1>
 		<ul>
