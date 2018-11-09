@@ -1,9 +1,20 @@
 import Layout from '../components/MyLayout';
 import Link from 'next/link';
+import Head from 'next/head';
 import fetch from 'isomorphic-unfetch';
 
 
-const Index = (props) => (
+const Index = (props) => ( 
+<div>
+	<Head>
+		<title>React Server Side Rendering</title>
+		<meta charSet='utf-8' />
+		<meta name='viewport' content='initial-scale=1.0, width=device-width' />
+		<meta name="google-site-verification" content="BTBGtjSmjRlIGKxxkdO2oip-gRk-vGZNXoTOWNV38KQ" />
+	</Head>
+
+	<h1>This page has a title :thinking_face:</h1>
+
 	<Layout>
 		<h1>Batman TV shows</h1>
 		<ul>
@@ -16,6 +27,7 @@ const Index = (props) => (
 			))}
 		</ul>
 	</Layout>
+	</div>
 );
 
 Index.getInitialProps = async function() {
